@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="icon" type="image/svg" sizes="32x32" href="img/fav32.svg">
+	<link rel="icon" type="image/svg" sizes="256x256" href="img/fav256.svg">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Контакты</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-inner">
+			<div class="burger">
+				<span> </span>
+				<span> </span>
+				<span> </span>
+			</div>
+			<a class="header__logo" href="#">
+				<img src="img/svg/header-logo.svg" alt="">
+			</a>
+			<ul class="header-menu">
+				<li class="header-menu__item">
+					<a class="header-menu__link" href="#">
+						<span>Наши проекты</span>
+					</a>
+				</li>
+				<li class="header-menu__item">
+					<a class="header-menu__link" href="#">
+						<span>Услуги</span>
+					</a>
+				</li>
+				<li class="header-menu__item has-child">
+					<a class="header-menu__link" href="#">
+						<span>О нас</span>
+						<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 0.5L6.5 6L12 0.5" stroke="white" />
+						</svg>
+					</a>
+					<div class="submenu__box">
+						<ul class="submenu">
+							<li class="submenu__item">
+								<a class="submenu__link" href="#">Отзывы</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="header-menu__item">
+					<a class="header-menu__link" href="#">
+						<span>Блог</span>
+					</a>
+				</li>
+			</ul>
+			<div class="header-right">
+				<a class="header-whatsapp" href="#">
+					<span>+7 (927) 732-08-30</span>
+					<img src="img/svg/whatsapp.svg" alt="">
+				</a>
+				<button class="btn header-btn large transparent jsModalOpen" data-url="modals/feedback-modal.html">Заказать обратный звонок</button>
+				<div class="header__search jsSearchBtn">
+					<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+						<path d="M24.2197 22.4623L19.191 17.4688C20.811 15.5898 21.7222 13.2031 21.7222 10.5625C21.7222 4.77344 16.9635 0 11.1922 0C5.37039 0 0.712891 4.77344 0.712891 10.5625C0.712891 16.4023 5.42102 21.125 11.1922 21.125C13.7742 21.125 16.1535 20.2109 18.0267 18.5859L23.0047 23.6302C23.2072 23.7825 23.4097 23.8333 23.6629 23.8333C23.8654 23.8333 24.0679 23.7825 24.2197 23.6302C24.5235 23.3255 24.5235 22.7669 24.2197 22.4623ZM11.2429 19.5C6.28164 19.5 2.33289 15.4883 2.33289 10.5625C2.33289 5.63671 6.28164 1.625 11.2429 1.625C16.1535 1.625 20.1529 5.63671 20.1529 10.5625C20.1529 15.5391 16.1535 19.5 11.2429 19.5Z" fill="white" />
+					</svg>
+					<svg class="close-search" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+						<line y1="-0.5" x2="35.665" y2="-0.5" transform="matrix(-0.71866 0.695362 -0.825516 -0.564379 25.7031 1)" stroke="white" />
+						<line y1="-0.5" x2="35.665" y2="-0.5" transform="matrix(0.71866 0.695362 -0.825516 0.564379 1.43945 1.19971)" stroke="white" />
+					</svg>
+				</div>
+			</div>
+			<div class="header-mobile">
+				<a href="#">
+					<img src="img/mobile.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="header-search">
+			<div class="container">
+				<div class="search__wrapper">
+					<form action="#">
+						<input class="form__input" type="text">
+						<button class="header-search__btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+								<path d="M24.2197 22.4623L19.191 17.4688C20.811 15.5898 21.7222 13.2031 21.7222 10.5625C21.7222 4.77344 16.9635 0 11.1922 0C5.37039 0 0.712891 4.77344 0.712891 10.5625C0.712891 16.4023 5.42102 21.125 11.1922 21.125C13.7742 21.125 16.1535 20.2109 18.0267 18.5859L23.0047 23.6302C23.2072 23.7825 23.4097 23.8333 23.6629 23.8333C23.8654 23.8333 24.0679 23.7825 24.2197 23.6302C24.5235 23.3255 24.5235 22.7669 24.2197 22.4623ZM11.2429 19.5C6.28164 19.5 2.33289 15.4883 2.33289 10.5625C2.33289 5.63671 6.28164 1.625 11.2429 1.625C16.1535 1.625 20.1529 5.63671 20.1529 10.5625C20.1529 15.5391 16.1535 19.5 11.2429 19.5Z" fill="white" />
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="inner-wrapper">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li class="breadcrumb__item">
+						<a class="breadcrumb__link" href="#">Главная </a>
+					</li>
+					<li class="breadcrumb__item">Контакты </li>
+				</ul>
+				<h1>Контакты</h1>
+				<div class="contacts__main">
+					<div class="contacts__main-content">
+						<div class="contacts__main-head">
+							<b>DESIGN.VAGNER</b> имеет офисы в Москве и Подмосковье.
+						</div>
+						<div class="contacts__main-item">
+							<div class="contacts-item__head">Консультации:</div>
+							<ul class="contacts__list">
+								<li class="contacts__list-item">
+									<b>Email:</b>
+									<a href="mailto:info@design-vagner.ru">info@design-vagner.ru </a>
+								</li>
+								<li class="contacts__list-item">
+									<b>Телефон:</b>
+									<a href="tel:+74999999999">+ 7 (499) 999-99-99</a>
+								</li>
+								<li class="contacts__list-item">
+									<b>Адрес:</b>
+									<a href="https://yandex.ru/maps/213/moscow/house/verkhnelikhoborskaya_ulitsa_8/Z04YcwJoQUAPQFtvfXR0c3liZQ==/?ll=37.558859%2C55.852511&amp;z=17">Москва ул. Верхнелихоборская, 8, оф. 203</a>
+								</li>
+								<li class="contacts__list-item">ПН-ПТ: с 10:00 до 18:00</li>
+							</ul>
+						</div>
+						<div class="contacts__main-item">
+							<div class="contacts-item__head">Как к нам добраться</div>
+							<div class="contacts-item__subhead">
+								<b>Общественным транспортом:</b>
+							</div>
+							<p>От станции метро Верхние Лихоборы (выход №4) идите прямо вдоль улицы Лётчика Осканова до поворота на улице Верхнелихоборская и поверните налево. Идете пока не увидите слева дом 8 (Вы увидите сторожевую будку с воротами). Проходите внутрь здания и на втором этаже офис 203.</p>
+						</div>
+					</div>
+					<div class="contacts__main-img">
+						<img src="img/cm.png" alt="">
+						<svg xmlns="http://www.w3.org/2000/svg" width="664" height="665" viewBox="0 0 664 665" fill="none">
+							<path d="M23.3196 211.964C-1.49847 275.45 -7.00552 347.134 11.9897 418.025C59.3301 594.702 240.932 699.549 417.608 652.209C594.285 604.869 699.133 423.267 651.793 246.59C604.452 69.9136 422.85 -34.9342 246.174 12.4061C195.038 26.1078 149.92 51.0565 112.767 83.8776" stroke="#C48C6D" />
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="contacts-map">
+				<div class="container">
+					<div class="contacts-map__heading">На автомобиле:</div>
+				</div>
+				<div class="map" id="map"></div>
+			</div>
+			<div class="feedback">
+				<div class="container">
+					<div class="centered-heading">
+						<h2>Предложение о сотрудничестве</h2>
+						<div class="subheading feedback__subheading">Напишите нам если Вам интересно об условиях совместной работы</div>
+					</div>
+				</div>
+				<div class="centered-box">
+					<button class="btn large">Отправить Сообщение</button>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-section">
+				<a class="footer-logo" href="#">
+					<img src="img/svg/footer-logo.svg" alt="">
+				</a>
+				<div class="footer-contacts">
+					<a href="mailto:info@design-vagner.ru">info@design-vagner.ru </a>
+					<a class="footer-tel" href="tel:+79277320830">+7 (927) 732-08-30</a>
+				</div>
+			</div>
+			<div class="footer-section">
+				<div class="footer-copy">© DESIGN.VAGNER, 2023 Все права защищены.</div>
+				<div class="footer-links">
+					<a href="#">Политика конфиденциальности</a>
+					<div class="developers">
+						<ins>Разработка сайта</ins>
+						<span>—</span>
+						<a href="https://www.abcwww.ru/">«АБВ сайт» </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.6.1.js"></script>
+	<script defer src="js/fancybox.js">  </script>
+	<script defer src="js/swiper.js"></script>
+	<script defer src="js/imagesLoaded.js"> </script>
+	<script defer src="js/masonry.js"> </script>
+	<script defer src="js/gsap.min.js"> </script>
+	<script defer src="js/scrollTrigger.js"> </script>
+	<script src="js/scrollSmoother.js"> </script>
+	<script defer src="js/splitting.js"> </script>
+	<script defer src="js/ukiyo.js"> </script>
+	<script src="js/main.js"> </script>
+	<script src="//api-maps.yandex.ru/2.1/?&amp;lang=ru-RU&amp;onload=getYaMap"> </script>
+	<script>
+      function getYaMap() {
+          var myMap = new ymaps.Map('map', {
+              center: [55.765017, 37.364122],
+              zoom: 14
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                  '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+              ),
+              myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      
+              }, {
+                  iconLayout: 'default#image',
+                  iconImageHref: 'img/svg/marker.svg',
+                  iconImageSize: [25, 33],
+                  iconImageOffset: [-5, -38]
+              })
+          myMap.geoObjects.add(myPlacemark)
+          myMap.behaviors.disable('scrollZoom')
+      }
+    </script>
+</body>
+
+</html>

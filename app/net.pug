@@ -1,0 +1,311 @@
+doctype html
+html(lang="ru")
+    head
+        include includes/head
+
+        title Сетка галереи
+    body 
+        include includes/header
+        
+        main 
+            .inner-wrapper 
+                .container 
+                    ul.breadcrumbs 
+                        li.breadcrumb__item 
+                            a(href="#").breadcrumb__link Главная     
+                        li.breadcrumb__item Наши проекты
+                    h1 Наши проекты
+                    .blog__textblock.small-margin 
+                        p Наша команда профессиональных дизайнеров интерьера создает неповторимые проекты, которые учитывают все пожелания и требования клиентов. Мы гарантируем, что каждый наш проект будет отражать уникальность и индивидуальность вашего жилища.
+                .gallery-items__box
+                    .gallery-wrapper
+                        .gallery-section 
+                            .gallery__item 
+                                .heading.gallery__heading Дом из клееного бруса «Единение с природой»
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-1.webp" type="image/webp")
+                                        img(src="img/g-1.jpg", alt="")
+                            .gallery__item 
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-2.webp" type="image/webp")
+                                        img(src="img/g-2.jpg", alt="")
+                            .gallery__item 
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-2.webp" type="image/webp")
+                                        img(src="img/g-2.jpg", alt="")
+                            .gallery__item 
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-2.webp" type="image/webp")
+                                        img(src="img/g-2.jpg", alt="")
+                        .gallery__bottom 
+                            .gallery__bottom-text
+                                p Главное для стиля модернизм — это дополнять простой интерьер необычным декором. В данном случае такими оригинальными элементами являются: две огромные вазы чёрного цвета, которые отличаются по форме; два металлических шара; картина
+                            .gallery__bottom-img 
+                                picture 
+                                    source(srcset="img/webp/gb.webp" type="image/webp")
+                                    img(src="img/gb.jpg", alt="")
+                            .gallery__bottom-params
+                                ul.gallery__list 
+                                    li.gallery__list-item 
+                                        b Площадь:
+                                        span 230 кв.м, 2 этажа
+                                    li.gallery__list-item 
+                                        b Дизайнер:
+                                        span Иванов Иван
+                                .gallery__bottom-link 
+                                    a(href="#").btn.large подробнее 
+                    .gallery-wrapper.white
+                        .container 
+                            .heading 
+                                h2 Умный дом
+                        .gallery-section
+                            .gallery__item
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-3.webp" type="image/webp")
+                                        img(src="img/g-3.jpg", alt="")
+                            .gallery__item
+                                .gallery__item-content 
+                                    .gallery-content__top
+                                        p Главное для стиля модернизм — это дополнять простой интерьер необычным декором. В данном случае такими оригинальными элементами являются: две огромные вазы чёрного цвета, которые отличаются по форме; два металлических шара; картина
+                                    .gallery-content__bottom 
+                                        ul.gallery__list 
+                                            li.gallery__list-item 
+                                                b Площадь:
+                                                span 230 кв.м, 2 этажа
+                                            li.gallery__list-item 
+                                                b Дизайнер:
+                                                span Иванов Иван
+                                        a(href="#").btn.large подробнее 
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-4.webp" type="image/webp")
+                                        img(src="img/g-4.jpg", alt="")
+                            .gallery__item.large
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-large.webp" type="image/webp")
+                                        img(src="img/g-large.jpg", alt="")
+                    
+                    .gallery-wrapper
+                        .gallery-section 
+                            .gallery__item 
+                                .heading.gallery__heading Дом из клееного бруса «Единение с природой»
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-1.webp" type="image/webp")
+                                        img(src="img/g-1.jpg", alt="")
+                            .gallery__item 
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-2.webp" type="image/webp")
+                                        img(src="img/g-2.jpg", alt="")
+                        .gallery__bottom 
+                            .gallery__bottom-text
+                                p Главное для стиля модернизм — это дополнять простой интерьер необычным декором. В данном случае такими оригинальными элементами являются: две огромные вазы чёрного цвета, которые отличаются по форме; два металлических шара; картина
+                            .gallery__bottom-img 
+                                picture 
+                                    source(srcset="img/webp/gb.webp" type="image/webp")
+                                    img(src="img/gb.jpg", alt="")
+                            .gallery__bottom-params
+                                ul.gallery__list 
+                                    li.gallery__list-item 
+                                        b Площадь:
+                                        span 230 кв.м, 2 этажа
+                                    li.gallery__list-item 
+                                        b Дизайнер:
+                                        span Иванов Иван
+                                .gallery__bottom-link 
+                                    a(href="#").btn.large подробнее 
+                    .gallery-wrapper.white
+                        .container 
+                            .heading 
+                                h2 Умный дом
+                        .gallery-section
+                            .gallery__item
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-3.webp" type="image/webp")
+                                        img(src="img/g-3.jpg", alt="")
+                            .gallery__item
+                                .gallery__item-content 
+                                    .gallery-content__top
+                                        p Главное для стиля модернизм — это дополнять простой интерьер необычным декором. В данном случае такими оригинальными элементами являются: две огромные вазы чёрного цвета, которые отличаются по форме; два металлических шара; картина
+                                    .gallery-content__bottom 
+                                        ul.gallery__list 
+                                            li.gallery__list-item 
+                                                b Площадь:
+                                                span 230 кв.м, 2 этажа
+                                            li.gallery__list-item 
+                                                b Дизайнер:
+                                                span Иванов Иван
+                                        a(href="#").btn.large подробнее 
+                                .gallery__img 
+                                    picture 
+                                        source(srcset="img/webp/g-4.webp" type="image/webp")
+                                        img(src="img/g-4.jpg", alt="")
+                
+                .pagination-box.container
+                    ul.pagination 
+                        li.pagination__item 
+                            a(href="#").pagination__link.current 1
+                        li.pagination__item 
+                            a(href="#").pagination__link 2
+                        li.pagination__item 
+                            a(href="#").pagination__link 3
+                        li.pagination__item 
+                            a(href="#").pagination__link 4
+                        li.pagination__item 
+                            a(href="#").pagination__link 5
+                        li.pagination__item 
+                            a(href="#").pagination__link . . . 
+                        li.pagination__item 
+                            a(href="#").pagination__link 12
+                
+                .reviews-slider__box
+                    .container 
+                        .heading
+                            h2 ОТЗЫВЫ
+                    .reviews-slider__wrappaer
+                        .reviews-slider.swiper 
+                            .swiper-wrapper 
+                                .reviews-slider__item.swiper-slide 
+                                    .reviews-slider__content
+                                        .reviews-slider__head
+                                            .reviews-slider__author Дмитрий
+                                            .reviews-slider__date 12.10.2022
+                                        .reviews-slider__name Дизайн-проект под ключ
+                                        .reviews-slider__descr Заказывал дизайн-проект своей квартиры в 2020-21. К сожалению, пандемия внесла коррективы и наш ремонт все еще продолжается. Хотя «свет в конце тоннеля» уже виден и квартира потихоньку обретает желаемый вид работа студии по заказу четко построена: анкета для понимания запроса, варианты планировки, коллажи для разработки цветового решения и т.д. Каждый этап четко прописан, указанные сроки соблюдаются. Юлия и Александр очень тщательно подходят к своей работе. Александр старается учесть все технические «мелочи» при подготовке чертежей. А Юлия-это креатив и красота. После передачи проекта при самостоятельном ремонте не бросают. Всегда можно обратиться за советом, Юля никогда не отказывает, помогает, если необходима замена чего-либо по проекту. Мы заказывали, в том числе, услугу комплектации объекта. Очень рекомендую, так как это действительно бережет время и нервы при закупке. Моя оценка - отлично. Я рекомендую
+                                .reviews-slider__item.swiper-slide 
+                                    .reviews-slider__content
+                                        .reviews-slider__head
+                                            .reviews-slider__author Дмитрий
+                                            .reviews-slider__date 12.10.2022
+                                        .reviews-slider__name Дизайн-проект под ключ
+                                        .reviews-slider__descr Заказывал дизайн-проект своей квартиры в 2020-21. К сожалению, пандемия внесла коррективы и наш ремонт все еще продолжается. Хотя «свет в конце тоннеля» уже виден и квартира потихоньку обретает желаемый вид работа студии по заказу четко построена: анкета для понимания запроса, варианты планировки, коллажи для разработки цветового решения и т.д. Каждый этап четко прописан, указанные сроки соблюдаются. Юлия и Александр очень тщательно подходят к своей работе. Александр старается учесть все технические «мелочи» при подготовке чертежей. А Юлия-это креатив и красота. После передачи проекта при самостоятельном ремонте не бросают. Всегда можно обратиться за советом, Юля никогда не отказывает, помогает, если необходима замена чего-либо по проекту. Мы заказывали, в том числе, услугу комплектации объекта. Очень рекомендую, так как это действительно бережет время и нервы при закупке. Моя оценка - отлично. Я рекомендую
+                                .reviews-slider__item.swiper-slide 
+                                    .reviews-slider__content
+                                        .reviews-slider__head
+                                            .reviews-slider__author Дмитрий
+                                            .reviews-slider__date 12.10.2022
+                                        .reviews-slider__name Дизайн-проект под ключ
+                                        .reviews-slider__descr Заказывал дизайн-проект своей квартиры в 2020-21. К сожалению, пандемия внесла коррективы и наш ремонт все еще продолжается. Хотя «свет в конце тоннеля» уже виден и квартира потихоньку обретает желаемый вид работа студии по заказу четко построена: анкета для понимания запроса, варианты планировки, коллажи для разработки цветового решения и т.д. Каждый этап четко прописан, указанные сроки соблюдаются. Юлия и Александр очень тщательно подходят к своей работе. Александр старается учесть все технические «мелочи» при подготовке чертежей. А Юлия-это креатив и красота. После передачи проекта при самостоятельном ремонте не бросают. Всегда можно обратиться за советом, Юля никогда не отказывает, помогает, если необходима замена чего-либо по проекту. Мы заказывали, в том числе, услугу комплектации объекта. Очень рекомендую, так как это действительно бережет время и нервы при закупке. Моя оценка - отлично. Я рекомендую
+                            .swiper-button-next
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9" fill="none">
+                                    <path d="M21.419 4.67777C21.6142 4.48251 21.6142 4.16593 21.419 3.97067L18.237 0.788685C18.0417 0.593423 17.7251 0.593423 17.5299 0.788685C17.3346 0.983947 17.3346 1.30053 17.5299 1.49579L20.3583 4.32422L17.5299 7.15265C17.3346 7.34791 17.3346 7.66449 17.5299 7.85975C17.7251 8.05501 18.0417 8.05501 18.237 7.85975L21.419 4.67777ZM0.935547 4.82422L21.0654 4.82422V3.82422L0.935547 3.82422L0.935547 4.82422Z" fill="black"/>
+                                </svg>
+                            .swiper-button-prev
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9" fill="none">
+                                    <path d="M0.581016 4.00238C0.386356 4.19824 0.387329 4.51482 0.58319 4.70948L3.77494 7.88167C3.9708 8.07633 4.28738 8.07535 4.48204 7.87949C4.6767 7.68363 4.67573 7.36705 4.47987 7.17239L1.64276 4.35267L4.46248 1.51556C4.65714 1.3197 4.65617 1.00312 4.46031 0.808457C4.26444 0.613796 3.94786 0.614769 3.7532 0.810631L0.581016 4.00238ZM21.0639 3.79297L0.934118 3.85484L0.937192 4.85484L21.067 4.79297L21.0639 3.79297Z" fill="black"/>
+                                </svg>
+                            .swiper-pagination
+                    
+                    .flex-end-box.reviews-more.container
+                        a(href="#").decoration-link 
+                            span посмотреть все
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="78" viewBox="0 0 75 78" fill="none">
+                                <path d="M51.3536 39.3536C51.5488 39.1583 51.5488 38.8417 51.3536 38.6464L48.1716 35.4645C47.9763 35.2692 47.6597 35.2692 47.4645 35.4645C47.2692 35.6597 47.2692 35.9763 47.4645 36.1716L50.2929 39L47.4645 41.8284C47.2692 42.0237 47.2692 42.3403 47.4645 42.5355C47.6597 42.7308 47.9763 42.7308 48.1716 42.5355L51.3536 39.3536ZM20 39.5H51V38.5H20V39.5Z" fill="black"/>
+                                <path d="M0.662109 25C6.23642 10.9415 19.9573 1 36.0001 1C56.9869 1 74.0001 18.0132 74.0001 39C74.0001 59.9868 56.9869 77 36.0001 77C19.9573 77 6.23642 67.0585 0.662109 53" stroke="black"/>
+                            </svg>
+                .main-blog__wrapper.bg 
+                    .main-blog 
+                        .container 
+                            h2 Блог #[br] <b>DESIGN.VAGNER</b>
+                            .blog-slider__wrapper 
+                                .blog-slider.swiper 
+                                    .swiper-wrapper
+                                        .blog__item.swiper-slide 
+                                            .blog__item-head 
+                                                picture 
+                                                    source(srcset="img/webp/b-1@x2.webp" type="image/webp")
+                                                    img(src="img/b-1@x2.png", alt="")
+                                            .blog__item-body
+                                                .blog__item-name Умный дом
+                                                .blog__item-date 12 апреля 2023
+                                                .blog__item-descr Комплектация В нашей студии есть услуга комплектации. Это подбор материалов и закупка по ценам ниже розничных. Вам предстоит ремонт и вы в ужасе от цен на строительные материалы и мебель? Мы поможем сэкономить ваш бюджет! Как все происходит? 
+                                                .blog__item-link 
+                                                    a(href="#") Подробнее
+                                        .blog__item.swiper-slide 
+                                            .blog__item-head 
+                                                picture 
+                                                    source(srcset="img/webp/b-2@x2.webp" type="image/webp")
+                                                    img(src="img/b-2@x2.png", alt="")
+                                            .blog__item-body
+                                                .blog__item-name Умный дом
+                                                .blog__item-date 12 апреля 2023
+                                                .blog__item-descr Главное для стиля модернизм — это дополнять простой интерьер необычным декором. В данном случае такими оригинальными элементами являются: две огромные вазы чёрного цвета, которые отличаются по форме; два металлических шара; картина . . . 
+                                                .blog__item-link 
+                                                    a(href="#") Подробнее
+                                        .blog__item.swiper-slide 
+                                            .blog__item-head 
+                                                picture 
+                                                    source(srcset="img/webp/b-3@x2.webp" type="image/webp")
+                                                    img(src="img/b-3@x2.png", alt="")
+                                            .blog__item-body
+                                                .blog__item-name Умный дом
+                                                .blog__item-date 12 апреля 2023
+                                                .blog__item-descr Комплектация В нашей студии есть услуга комплектации. Это подбор материалов и закупка по ценам ниже розничных. Вам предстоит ремонт и вы в ужасе от цен на строительные материалы и мебель? Мы поможем сэкономить ваш бюджет! Как все происходит? 
+                                                .blog__item-link 
+                                                    a(href="#") Подробнее
+                                        .blog__item.swiper-slide 
+                                            .blog__item-head 
+                                                picture 
+                                                    source(srcset="img/webp/b-1@x2.webp" type="image/webp")
+                                                    img(src="img/b-1@x2.png", alt="")
+                                            .blog__item-body
+                                                .blog__item-name Умный дом
+                                                .blog__item-date 12 апреля 2023
+                                                .blog__item-descr Комплектация В нашей студии есть услуга комплектации. Это подбор материалов и закупка по ценам ниже розничных. Вам предстоит ремонт и вы в ужасе от цен на строительные материалы и мебель? Мы поможем сэкономить ваш бюджет! Как все происходит? 
+                                                .blog__item-link 
+                                                    a(href="#") Подробнее
+                                        .blog__item.swiper-slide 
+                                            .blog__item-head 
+                                                picture 
+                                                    source(srcset="img/webp/b-2@x2.webp" type="image/webp")
+                                                    img(src="img/b-2@x2.png", alt="")
+                                            .blog__item-body
+                                                .blog__item-name Умный дом
+                                                .blog__item-date 12 апреля 2023
+                                                .blog__item-descr Главное для стиля модернизм — это дополнять простой интерьер необычным декором. В данном случае такими оригинальными элементами являются: две огромные вазы чёрного цвета, которые отличаются по форме; два металлических шара; картина . . . 
+                                                .blog__item-link 
+                                                    a(href="#") Подробнее
+                                        .blog__item.swiper-slide 
+                                            .blog__item-head 
+                                                picture 
+                                                    source(srcset="img/webp/b-3@x2.webp" type="image/webp")
+                                                    img(src="img/b-3@x2.png", alt="")
+                                            .blog__item-body
+                                                .blog__item-name Умный дом
+                                                .blog__item-date 12 апреля 2023
+                                                .blog__item-descr Комплектация В нашей студии есть услуга комплектации. Это подбор материалов и закупка по ценам ниже розничных. Вам предстоит ремонт и вы в ужасе от цен на строительные материалы и мебель? Мы поможем сэкономить ваш бюджет! Как все происходит? 
+                                                .blog__item-link 
+                                                    a(href="#") Подробнее
+                                    .blog-slider__controls
+                                        .swiper-button-next
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9" fill="none">
+                                                <path d="M21.419 4.67777C21.6142 4.48251 21.6142 4.16593 21.419 3.97067L18.237 0.788685C18.0417 0.593423 17.7251 0.593423 17.5299 0.788685C17.3346 0.983947 17.3346 1.30053 17.5299 1.49579L20.3583 4.32422L17.5299 7.15265C17.3346 7.34791 17.3346 7.66449 17.5299 7.85975C17.7251 8.05501 18.0417 8.05501 18.237 7.85975L21.419 4.67777ZM0.935547 4.82422L21.0654 4.82422V3.82422L0.935547 3.82422L0.935547 4.82422Z" fill="black"/>
+                                            </svg>
+                                        .swiper-button-prev
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9" fill="none">
+                                                <path d="M0.581016 4.00238C0.386356 4.19824 0.387329 4.51482 0.58319 4.70948L3.77494 7.88167C3.9708 8.07633 4.28738 8.07535 4.48204 7.87949C4.6767 7.68363 4.67573 7.36705 4.47987 7.17239L1.64276 4.35267L4.46248 1.51556C4.65714 1.3197 4.65617 1.00312 4.46031 0.808457C4.26444 0.613796 3.94786 0.614769 3.7532 0.810631L0.581016 4.00238ZM21.0639 3.79297L0.934118 3.85484L0.937192 4.85484L21.067 4.79297L21.0639 3.79297Z" fill="black"/>
+                                            </svg>
+                                    .swiper-pagination
+                                .centered-box 
+                                    a(href="#").decoration-link 
+                                        span перейти в блог
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="75" height="78" viewBox="0 0 75 78" fill="none">
+                                            <path d="M51.3536 39.3536C51.5488 39.1583 51.5488 38.8417 51.3536 38.6464L48.1716 35.4645C47.9763 35.2692 47.6597 35.2692 47.4645 35.4645C47.2692 35.6597 47.2692 35.9763 47.4645 36.1716L50.2929 39L47.4645 41.8284C47.2692 42.0237 47.2692 42.3403 47.4645 42.5355C47.6597 42.7308 47.9763 42.7308 48.1716 42.5355L51.3536 39.3536ZM20 39.5H51V38.5H20V39.5Z" fill="black"/>
+                                            <path d="M0.662109 25C6.23642 10.9415 19.9573 1 36.0001 1C56.9869 1 74.0001 18.0132 74.0001 39C74.0001 59.9868 56.9869 77 36.0001 77C19.9573 77 6.23642 67.0585 0.662109 53" stroke="black"/>
+                                        </svg> 
+                
+                
+                .feedback-white
+                    include includes/blocks/feedback
+                            
+
+        
+        include includes/footer

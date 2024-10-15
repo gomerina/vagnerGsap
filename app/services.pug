@@ -1,0 +1,107 @@
+doctype html
+html(lang="ru")
+    head
+        include includes/head
+
+        title Услуги
+    body 
+        include includes/header
+        
+        main 
+            .main-wrapper.inner-wrapper.services-wrapper
+                .container 
+                    ul.breadcrumbs 
+                        li.breadcrumb__item 
+                            a(href="#").breadcrumb__link Главная   
+                        li.breadcrumb__item Услуги
+                
+                .services-main
+                    .container 
+                        h1.services-main__heading Индивидуальный дизайн проект
+                    .services-main__inner 
+                        .servieces-main__img 
+                            img(src="img/services-main@x2.jpg", alt="")
+                        .services-main__content 
+                            ul.services-main__list 
+                                li.services__list-item Планировочные решения
+                                li.services__list-item Рабочая и техническая документация
+                                li.services__list-item 3D визуализация будущего интерьера
+                            button.btn.jsModalOpen(data-url="modals/feedback-modal.html") оставить заявку
+                .laws
+                    .container 
+                        .laws__inner 
+                            .laws__img 
+                                img(src="img/laws.png", alt="")
+                            .heading.laws-heading Юридическое сопровождение 
+                            .laws__box 
+                                .laws__item
+                                    .laws__item-icon 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                                            <circle cx="21" cy="21" r="21" fill="white"/>
+                                            <path d="M11 18.225L19.4627 27L32 14" stroke="#945736" stroke-width="3"/>
+                                        </svg>
+                                    .laws__item-text 
+                                        p Согласование проекта с Управляющей компанией
+                                .laws__item
+                                    .laws__item-icon 
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                                            <circle cx="21" cy="21" r="21" fill="white"/>
+                                            <path d="M11 18.225L19.4627 27L32 14" stroke="#945736" stroke-width="3"/>
+                                        </svg>
+                                    .laws__item-text 
+                                        p Согласование перепланировки с Жилищной инспекцией и БТИ
+                            button.btn.jsModalOpen(data-url="modals/feedback-modal.html") оставить заявку
+                
+                .complectation 
+                    .container 
+                        .complectation__head
+                            .heading.complectation-heading Полная комплектация дизайн проекта 
+                            p Чистовыми отделочными материалами, мебелью, бытовой техникой, текстилем и декором
+                    .complectation__inner
+                        .complectation__img
+                            img(src="img/complectation@x2.jpg", alt="")
+                        .complectation__content
+                            ul.complectation__list  
+                                li.complectation__list-item Рассчитаем полную смету дизайн проекта до начала ремонтных работ, в рамках согласованного бюджета
+                                li.complectation__list-item Подбор и поставка чистовых отделочных материалов, мебели, бытовой техники, текстиля и декора, согласно 3D визуализации дизайн проекта
+                                li.complectation__list-item Работа с поставщиками и производителями по рекламациям
+                            button.btn.jsModalOpen(data-url="modals/feedback-modal.html") оставить заявку
+                
+                .controls 
+                    .container 
+                        .heading.controls-heading Авторский надзор #[br] и ремонтные работы под ключ
+                    .controls__inner
+                        .controls__content 
+                            p Мы рекомендуем для проведения ремонтно-строительных работ наших проверенных бизнес-партнёров (перед заключением контракта на строительно-ремонтные работы – демонстрация выполненных проектов)
+                            ul.controls__list 
+                                li.controls__list-item Авторский надзор осуществляется нами с периодичностью 1 раз в неделю для отслеживания соответствия дизайн проекта и ремонтно-строительных работ на объекте, их качества, соблюдение сроков выполнения
+                                li.controls__list-item Ведение журнала авторского надзора — отслеживание этапов и качества выполнения работ, запись описания и сроков всех этапов в журнал.
+                                li.controls__list-item Фото и видео отчет процесса реализации Вашего проекта
+                            button.btn.jsModalOpen(data-url="modals/feedback-modal.html") оставить заявку
+                                    
+                                     
+                        .controls__img
+                            img(src="img/controls@x2.jpg", alt="")
+
+                .advantages 
+                    .container 
+                        .advantages__inner 
+                            .advantages__img 
+                                img(src="img/advantages.png", alt="")
+                            .advantages__content 
+                                .heading.advantages-heading Почему стоит сделать заказ в DESIGN.VAGNER
+                                p <b>Всё в одном месте</b> - дизайн проект, юридическое сопровождение, полная комплектация мебелью и чистовыми материалами под ключ, проверенные ремонтные компании и осуществление авторского надзор за ходом реализации проекта
+                                p 
+                                    strong Гарантии на комплекс выполненных работ – 5 лет
+                                button.btn.jsModalOpen(data-url="modals/feedback-modal.html") оставить заявку
+                
+                
+                .feedback-white
+                    include includes/blocks/feedback
+
+
+
+
+
+
+        include includes/footer

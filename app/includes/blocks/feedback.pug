@@ -1,0 +1,30 @@
+.feedback 
+    .container 
+        .centered-heading 
+            h2 Хочу проект в  Design.vagner
+            .subheading.feedback__subheading Оставьте заявку, мы вам перезвоним в течение 24 часов
+        .feedback-form__box
+            form(action="#")
+                .feedback-fields__group 
+                    .feedback-field__item.error 
+                        p.feedback-field__name Ваше имя
+                        input(type="text").form__input
+                        .error-icon 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <line x1="1.35355" y1="0.646447" x2="16.3536" y2="15.6464" stroke="#EC0000"/>
+                                <line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 16 1)" stroke="#EC0000"/>
+                            </svg>
+                    .feedback-field__item 
+                        p.feedback-field__name Телефон
+                        input(type="tel").form__input
+                        .error-icon 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                                <line x1="1.35355" y1="0.646447" x2="16.3536" y2="15.6464" stroke="#EC0000"/>
+                                <line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 16 1)" stroke="#EC0000"/>
+                            </svg>
+                .feedback-bottom 
+                    label.control.control-checkbox
+                        span Я даю согласие на обработку моих персональных данных согласно <a href="#"><ins>политике конфиденциальности</ins></a>
+                        input(type="checkbox")
+                        span.control_indicator
+                    button.btn.large Отправить заявку

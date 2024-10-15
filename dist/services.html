@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="icon" type="image/svg" sizes="32x32" href="img/fav32.svg">
+	<link rel="icon" type="image/svg" sizes="256x256" href="img/fav256.svg">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="css/fancybox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Услуги</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header-inner">
+			<div class="burger">
+				<span> </span>
+				<span> </span>
+				<span> </span>
+			</div>
+			<a class="header__logo" href="#">
+				<img src="img/svg/header-logo.svg" alt="">
+			</a>
+			<ul class="header-menu">
+				<li class="header-menu__item">
+					<a class="header-menu__link" href="#">
+						<span>Наши проекты</span>
+					</a>
+				</li>
+				<li class="header-menu__item">
+					<a class="header-menu__link" href="#">
+						<span>Услуги</span>
+					</a>
+				</li>
+				<li class="header-menu__item has-child">
+					<a class="header-menu__link" href="#">
+						<span>О нас</span>
+						<svg width="13" height="7" viewBox="0 0 13 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 0.5L6.5 6L12 0.5" stroke="white" />
+						</svg>
+					</a>
+					<div class="submenu__box">
+						<ul class="submenu">
+							<li class="submenu__item">
+								<a class="submenu__link" href="#">Отзывы</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" href="#">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="header-menu__item">
+					<a class="header-menu__link" href="#">
+						<span>Блог</span>
+					</a>
+				</li>
+			</ul>
+			<div class="header-right">
+				<a class="header-whatsapp" href="#">
+					<span>+7 (927) 732-08-30</span>
+					<img src="img/svg/whatsapp.svg" alt="">
+				</a>
+				<button class="btn header-btn large transparent jsModalOpen" data-url="modals/feedback-modal.html">Заказать обратный звонок</button>
+				<div class="header__search jsSearchBtn">
+					<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+						<path d="M24.2197 22.4623L19.191 17.4688C20.811 15.5898 21.7222 13.2031 21.7222 10.5625C21.7222 4.77344 16.9635 0 11.1922 0C5.37039 0 0.712891 4.77344 0.712891 10.5625C0.712891 16.4023 5.42102 21.125 11.1922 21.125C13.7742 21.125 16.1535 20.2109 18.0267 18.5859L23.0047 23.6302C23.2072 23.7825 23.4097 23.8333 23.6629 23.8333C23.8654 23.8333 24.0679 23.7825 24.2197 23.6302C24.5235 23.3255 24.5235 22.7669 24.2197 22.4623ZM11.2429 19.5C6.28164 19.5 2.33289 15.4883 2.33289 10.5625C2.33289 5.63671 6.28164 1.625 11.2429 1.625C16.1535 1.625 20.1529 5.63671 20.1529 10.5625C20.1529 15.5391 16.1535 19.5 11.2429 19.5Z" fill="white" />
+					</svg>
+					<svg class="close-search" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+						<line y1="-0.5" x2="35.665" y2="-0.5" transform="matrix(-0.71866 0.695362 -0.825516 -0.564379 25.7031 1)" stroke="white" />
+						<line y1="-0.5" x2="35.665" y2="-0.5" transform="matrix(0.71866 0.695362 -0.825516 0.564379 1.43945 1.19971)" stroke="white" />
+					</svg>
+				</div>
+			</div>
+			<div class="header-mobile">
+				<a href="#">
+					<img src="img/mobile.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="header-search">
+			<div class="container">
+				<div class="search__wrapper">
+					<form action="#">
+						<input class="form__input" type="text">
+						<button class="header-search__btn">
+							<svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26" fill="none">
+								<path d="M24.2197 22.4623L19.191 17.4688C20.811 15.5898 21.7222 13.2031 21.7222 10.5625C21.7222 4.77344 16.9635 0 11.1922 0C5.37039 0 0.712891 4.77344 0.712891 10.5625C0.712891 16.4023 5.42102 21.125 11.1922 21.125C13.7742 21.125 16.1535 20.2109 18.0267 18.5859L23.0047 23.6302C23.2072 23.7825 23.4097 23.8333 23.6629 23.8333C23.8654 23.8333 24.0679 23.7825 24.2197 23.6302C24.5235 23.3255 24.5235 22.7669 24.2197 22.4623ZM11.2429 19.5C6.28164 19.5 2.33289 15.4883 2.33289 10.5625C2.33289 5.63671 6.28164 1.625 11.2429 1.625C16.1535 1.625 20.1529 5.63671 20.1529 10.5625C20.1529 15.5391 16.1535 19.5 11.2429 19.5Z" fill="white" />
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="main-wrapper inner-wrapper services-wrapper">
+			<div class="container">
+				<ul class="breadcrumbs">
+					<li class="breadcrumb__item">
+						<a class="breadcrumb__link" href="#">Главная </a>
+					</li>
+					<li class="breadcrumb__item">Услуги</li>
+				</ul>
+			</div>
+			<div class="services-main">
+				<div class="container">
+					<h1 class="services-main__heading">Индивидуальный дизайн проект</h1>
+				</div>
+				<div class="services-main__inner">
+					<div class="servieces-main__img">
+						<img src="img/services-main@x2.jpg" alt="">
+					</div>
+					<div class="services-main__content">
+						<ul class="services-main__list">
+							<li class="services__list-item">Планировочные решения</li>
+							<li class="services__list-item">Рабочая и техническая документация</li>
+							<li class="services__list-item">3D визуализация будущего интерьера</li>
+						</ul>
+						<button class="btn jsModalOpen" data-url="modals/feedback-modal.html">оставить заявку</button>
+					</div>
+				</div>
+			</div>
+			<div class="laws">
+				<div class="container">
+					<div class="laws__inner">
+						<div class="laws__img">
+							<img src="img/laws.png" alt="">
+						</div>
+						<div class="heading laws-heading">Юридическое сопровождение </div>
+						<div class="laws__box">
+							<div class="laws__item">
+								<div class="laws__item-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+										<circle cx="21" cy="21" r="21" fill="white" />
+										<path d="M11 18.225L19.4627 27L32 14" stroke="#945736" stroke-width="3" />
+									</svg>
+								</div>
+								<div class="laws__item-text">
+									<p>Согласование проекта с Управляющей компанией</p>
+								</div>
+							</div>
+							<div class="laws__item">
+								<div class="laws__item-icon">
+									<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+										<circle cx="21" cy="21" r="21" fill="white" />
+										<path d="M11 18.225L19.4627 27L32 14" stroke="#945736" stroke-width="3" />
+									</svg>
+								</div>
+								<div class="laws__item-text">
+									<p>Согласование перепланировки с Жилищной инспекцией и БТИ</p>
+								</div>
+							</div>
+						</div>
+						<button class="btn jsModalOpen" data-url="modals/feedback-modal.html">оставить заявку</button>
+					</div>
+				</div>
+			</div>
+			<div class="complectation">
+				<div class="container">
+					<div class="complectation__head">
+						<div class="heading complectation-heading">Полная комплектация дизайн проекта </div>
+						<p>Чистовыми отделочными материалами, мебелью, бытовой техникой, текстилем и декором</p>
+					</div>
+				</div>
+				<div class="complectation__inner">
+					<div class="complectation__img">
+						<img src="img/complectation@x2.jpg" alt="">
+					</div>
+					<div class="complectation__content">
+						<ul class="complectation__list">
+							<li class="complectation__list-item">Рассчитаем полную смету дизайн проекта до начала ремонтных работ, в рамках согласованного бюджета</li>
+							<li class="complectation__list-item">Подбор и поставка чистовых отделочных материалов, мебели, бытовой техники, текстиля и декора, согласно 3D визуализации дизайн проекта</li>
+							<li class="complectation__list-item">Работа с поставщиками и производителями по рекламациям</li>
+						</ul>
+						<button class="btn jsModalOpen" data-url="modals/feedback-modal.html">оставить заявку</button>
+					</div>
+				</div>
+			</div>
+			<div class="controls">
+				<div class="container">
+					<div class="heading controls-heading">Авторский надзор
+						<br> и ремонтные работы под ключ
+					</div>
+				</div>
+				<div class="controls__inner">
+					<div class="controls__content">
+						<p>Мы рекомендуем для проведения ремонтно-строительных работ наших проверенных бизнес-партнёров (перед заключением контракта на строительно-ремонтные работы – демонстрация выполненных проектов)</p>
+						<ul class="controls__list">
+							<li class="controls__list-item">Авторский надзор осуществляется нами с периодичностью 1 раз в неделю для отслеживания соответствия дизайн проекта и ремонтно-строительных работ на объекте, их качества, соблюдение сроков выполнения</li>
+							<li class="controls__list-item">Ведение журнала авторского надзора — отслеживание этапов и качества выполнения работ, запись описания и сроков всех этапов в журнал.</li>
+							<li class="controls__list-item">Фото и видео отчет процесса реализации Вашего проекта</li>
+						</ul>
+						<button class="btn jsModalOpen" data-url="modals/feedback-modal.html">оставить заявку</button>
+					</div>
+					<div class="controls__img">
+						<img src="img/controls@x2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="advantages">
+				<div class="container">
+					<div class="advantages__inner">
+						<div class="advantages__img">
+							<img src="img/advantages.png" alt="">
+						</div>
+						<div class="advantages__content">
+							<div class="heading advantages-heading">Почему стоит сделать заказ в DESIGN.VAGNER</div>
+							<p>
+								<b>Всё в одном месте</b> - дизайн проект, юридическое сопровождение, полная комплектация мебелью и чистовыми материалами под ключ, проверенные ремонтные компании и осуществление авторского надзор за ходом реализации проекта
+							</p>
+							<p>
+								<strong>Гарантии на комплекс выполненных работ – 5 лет</strong>
+							</p>
+							<button class="btn jsModalOpen" data-url="modals/feedback-modal.html">оставить заявку</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feedback-white">
+				<div class="feedback">
+					<div class="container">
+						<div class="centered-heading">
+							<h2>Хочу проект в Design.vagner</h2>
+							<div class="subheading feedback__subheading">Оставьте заявку, мы вам перезвоним в течение 24 часов</div>
+						</div>
+						<div class="feedback-form__box">
+							<form action="#">
+								<div class="feedback-fields__group">
+									<div class="feedback-field__item error">
+										<p class="feedback-field__name">Ваше имя</p>
+										<input class="form__input" type="text">
+										<div class="error-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+												<line x1="1.35355" y1="0.646447" x2="16.3536" y2="15.6464" stroke="#EC0000" />
+												<line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 16 1)" stroke="#EC0000" />
+											</svg>
+										</div>
+									</div>
+									<div class="feedback-field__item">
+										<p class="feedback-field__name">Телефон</p>
+										<input class="form__input" type="tel">
+										<div class="error-icon">
+											<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+												<line x1="1.35355" y1="0.646447" x2="16.3536" y2="15.6464" stroke="#EC0000" />
+												<line y1="-0.5" x2="21.2132" y2="-0.5" transform="matrix(-0.707107 0.707107 0.707107 0.707107 16 1)" stroke="#EC0000" />
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="feedback-bottom">
+									<label class="control control-checkbox">
+										<span>Я даю согласие на обработку моих персональных данных согласно <a href="#">
+												<ins>политике конфиденциальности</ins>
+											</a>
+										</span>
+										<input type="checkbox">
+										<span class="control_indicator"></span>
+									</label>
+									<button class="btn large">Отправить заявку</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-section">
+				<a class="footer-logo" href="#">
+					<img src="img/svg/footer-logo.svg" alt="">
+				</a>
+				<div class="footer-contacts">
+					<a href="mailto:info@design-vagner.ru">info@design-vagner.ru </a>
+					<a class="footer-tel" href="tel:+79277320830">+7 (927) 732-08-30</a>
+				</div>
+			</div>
+			<div class="footer-section">
+				<div class="footer-copy">© DESIGN.VAGNER, 2023 Все права защищены.</div>
+				<div class="footer-links">
+					<a href="#">Политика конфиденциальности</a>
+					<div class="developers">
+						<ins>Разработка сайта</ins>
+						<span>—</span>
+						<a href="https://www.abcwww.ru/">«АБВ сайт» </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-3.6.1.js"></script>
+	<script defer src="js/fancybox.js">  </script>
+	<script defer src="js/swiper.js"></script>
+	<script defer src="js/imagesLoaded.js"> </script>
+	<script defer src="js/masonry.js"> </script>
+	<script defer src="js/gsap.min.js"> </script>
+	<script defer src="js/scrollTrigger.js"> </script>
+	<script src="js/scrollSmoother.js"> </script>
+	<script defer src="js/splitting.js"> </script>
+	<script defer src="js/ukiyo.js"> </script>
+	<script src="js/main.js"> </script>
+</body>
+
+</html>

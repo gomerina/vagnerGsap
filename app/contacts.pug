@@ -1,0 +1,84 @@
+doctype html
+html(lang="ru")
+    head
+        include includes/head
+
+        title Контакты
+    body 
+        include includes/header
+        
+        main 
+            .inner-wrapper 
+                .container 
+                    ul.breadcrumbs 
+                        li.breadcrumb__item 
+                            a(href="#").breadcrumb__link Главная     
+                        li.breadcrumb__item Контакты 
+                    h1 Контакты
+                    .contacts__main 
+                        .contacts__main-content 
+                            .contacts__main-head <b>DESIGN.VAGNER</b> имеет офисы в Москве и Подмосковье.
+                            .contacts__main-item 
+                                .contacts-item__head Консультации:
+                                ul.contacts__list 
+                                    li.contacts__list-item 
+                                        b Email:
+                                        a(href="mailto:info@design-vagner.ru") info@design-vagner.ru 
+                                    li.contacts__list-item 
+                                        b Телефон:
+                                        a(href="tel:+74999999999") + 7 (499) 999-99-99
+                                    li.contacts__list-item 
+                                        b Адрес:
+                                        a(href="https://yandex.ru/maps/213/moscow/house/verkhnelikhoborskaya_ulitsa_8/Z04YcwJoQUAPQFtvfXR0c3liZQ==/?ll=37.558859%2C55.852511&z=17") Москва ул. Верхнелихоборская, 8, оф. 203
+                                    li.contacts__list-item ПН-ПТ: с 10:00 до 18:00
+                            .contacts__main-item 
+                                .contacts-item__head Как к нам добраться
+                                .contacts-item__subhead 
+                                    b Общественным транспортом:
+                                p От станции метро Верхние Лихоборы (выход №4) идите прямо вдоль улицы Лётчика Осканова до поворота на улице Верхнелихоборская и поверните налево. Идете пока не увидите слева дом 8 (Вы увидите сторожевую будку с воротами). Проходите внутрь здания и на втором этаже офис 203.
+                        .contacts__main-img 
+                            img(src="img/cm.png", alt="")
+                            <svg xmlns="http://www.w3.org/2000/svg" width="664" height="665" viewBox="0 0 664 665" fill="none">
+                                <path d="M23.3196 211.964C-1.49847 275.45 -7.00552 347.134 11.9897 418.025C59.3301 594.702 240.932 699.549 417.608 652.209C594.285 604.869 699.133 423.267 651.793 246.59C604.452 69.9136 422.85 -34.9342 246.174 12.4061C195.038 26.1078 149.92 51.0565 112.767 83.8776" stroke="#C48C6D"/>
+                            </svg>
+                .contacts-map 
+                    .container 
+                        .contacts-map__heading На автомобиле:
+                    .map#map
+                .feedback 
+                    .container 
+                        .centered-heading 
+                            h2 Предложение о сотрудничестве
+                            .subheading.feedback__subheading Напишите нам если Вам интересно об условиях совместной работы
+                    .centered-box 
+                        button.btn.large Отправить Сообщение
+
+
+
+                    
+        
+        include includes/footer
+
+        script(src="//api-maps.yandex.ru/2.1/?&lang=ru-RU&onload=getYaMap") 
+        script. 
+            function getYaMap() {
+                var myMap = new ymaps.Map('map', {
+                    center: [55.765017, 37.364122],
+                    zoom: 14
+                }, {
+                    searchControlProvider: 'yandex#search'
+                }),
+                    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                    ),
+                    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+
+                    }, {
+                        iconLayout: 'default#image',
+                        iconImageHref: 'img/svg/marker.svg',
+                        iconImageSize: [25, 33],
+                        iconImageOffset: [-5, -38]
+                    })
+                myMap.geoObjects.add(myPlacemark)
+                myMap.behaviors.disable('scrollZoom')
+            }
